@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="TodoApp" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css" />
+        <title>Amazing Todo</title>
+    </head>
+    <body>
+        <div class="container">
+            <div ng-view></div>
+        </div>
+        
+        <!-- Scripts -->
+        <script src="~/Scripts/vendor/jquery-1.8.3.js"></script>
+        <script src="~/Scripts/vendor/angular.js"></script>
+        <script src="~/Scripts/vendor/angular-resource.js"></script>
+
+        <script src="~/Scripts/app/app.js"></script>
+        <script src="~/Scripts/app/directives/sorted.dir.js"></script>
+        <script src="~/Scripts/app/services/todo.svc.js"></script>
+        <script src="~/Scripts/app/controllers/list.ctrl.js"></script>
+        <script src="~/Scripts/app/controllers/create.ctrl.js"></script>
+        <script src="~/Scripts/app/controllers/edit.ctrl.js"></script>
+
+       
+
+        <!--Templates -->
+        <div ng-include="'/template/alltemplates'"></div>
+    </body>
+</html>
